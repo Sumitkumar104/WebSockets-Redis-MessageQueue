@@ -1,3 +1,11 @@
+-------------------------------------
+to  run server in typescript
+tsc -b       (build  a dist folder and then put all ts code converting  into js code )
+then run node dist/index.js
+
+
+
+---------------------------------------------------start---------------------------------------------------------------
 Backend is communication with each other through different types -
 1. through Http request 
 2. through web sockets
@@ -14,3 +22,7 @@ transcations in paytm  googlePay , code submission in leetcode codeforces , Driv
 - Websockets is a full duplex mode of persistent communication between the client and the server . It not wait for the response back whereas http wait for res return back and after return response it close the connection and make new connection again . But websockets communicate over a single TCP connections .
 
 - In http handshake happens at every time when we call to backend but in websocket handshake happen only in starting .
+
+- In nodejs we make http request by many methods like http , express or many more . But we use express mostly time beacause it provide good routing , middlewares , good ecosystem etc.
+
+- In Websockets initial we also we make a http request then do some advanced thing to convert this connection in websocket connection thatswhy we need a http library like express or inbuilt http-bundle provide by nodeJS .
