@@ -1,0 +1,16 @@
+Backend is communication with each other through different types -
+1. through Http request 
+2. through web sockets
+3. through pub and subs(publisher and subscriber)
+4. by message queues
+5. by polling
+
+Advanced backend communication examples are - 
+transcations in paytm  googlePay , code submission in leetcode codeforces , Driver tracker in uber , bitcoin withdrawal .
+
+
+--------------------------------------------------------Web sockets------------------------------------------------------
+
+- Websockets is a full duplex mode of persistent communication between the client and the server . It not wait for the response back whereas http wait for res return back and after return response it close the connection and make new connection again . But websockets communicate over a single TCP connections .
+
+- In http handshake happens at every time when we call to backend but in websocket handshake happen only in starting .
