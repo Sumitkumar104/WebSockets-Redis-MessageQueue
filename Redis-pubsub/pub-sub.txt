@@ -1,0 +1,11 @@
+- pub/subs is a very powerful pattern to build the scalable and  lossely coupled systems in backend technology .
+- In simple with the help of pub/subs (publisher and subscriber) different servers are talked to each other in real time and tranfer  the data from publisher server to different server who subscribe that publisher server. 
+- Here different server  means the websockets server .
+
+
+
+------------------ How we implement the pub subs in our code-------------------------
+- first I ceate a singleton class pubSubManager
+- It keeps track of what all stocks are users on this server interested in
+- It tells the pub sub whenever a new stock is added or a stock is removed from the list of interested stocks on that server
+- It relays the events to the right sockets whenever an event is received
